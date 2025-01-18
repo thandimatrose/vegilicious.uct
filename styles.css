@@ -1,0 +1,263 @@
+:root {
+  --main-back: #fff8f4;
+  --padder-val: 20px 27px;
+  --dark-colour: #020225;
+  --dark-accent: #002827;
+  --colourful-accent: #7c1f76;
+  --bright-accent: #caee66;
+  --mid-accent: #4b5e17;
+  --body-width: 825px;
+  --sans-font: "PingFang SC", sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+p {
+  text-align: justify;
+  line-height: 29px;
+  letter-spacing: -1px;
+}
+
+a {
+  color: var(--colourful-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+
+  color: var(--dark-colour);
+
+  line-height: 1.6;
+  background-color: var(--main-back);
+  font-size: large;
+  font-family: "Old Standard TT", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: -1px;
+  font-style: normal;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  justify-content: end;
+  margin: 0;
+  padding-left: 25%;
+}
+
+header {
+  position: fixed;
+  left: 10%;
+  top: 100px;
+  max-width: 15%;
+  margin: auto;
+  column-gap: 25px;
+  align-self: end;
+  text-align: right;
+}
+
+header iframe {
+  margin-right: 20px;
+}
+
+header section {
+  padding: 0px 0px;
+}
+
+nav {
+
+
+  border-top: 1px var(--dark-colour) solid;
+  border-bottom: 1px var(--dark-colour) solid;
+
+}
+
+nav ol {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: var(--dark-colour);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--main-back);
+  text-decoration: none;
+}
+
+main {
+  padding: var(--padder-val) 0px;
+
+  margin: 50px 0;
+  background-color: var(--main-back);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin-top: 0px;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 67px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+h1 span.highlight-light {
+  line-height: 100px;
+}
+
+h2 {
+  color: var(--colourful-accent);
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 15px;
+  letter-spacing: 10px;
+  padding: 10px 0;
+  font-weight: 500;
+  border-top: 1px var(--dark-colour) solid;
+  border-bottom: 1px var(--dark-colour) solid;
+  text-transform: uppercase;
+  font-family: var(--sans-font);
+}
+
+iframe {
+  border: none;
+  height: 600px;
+}
+
+section {
+  max-width: 1000px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: var(--padder-val);
+  position: relative;
+  bottom: 0;
+  max-width: 825px;
+  margin: auto;
+}
+
+.playfair-display-MEDIUM {
+  font-family: "Ibarra Real Nova", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.playfair-display-BOLD {
+  font-family: "Ibarra Real Nova", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+section#about-the-team .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+section#about-the-team .container .card {}
+
+section#about-the-team .container .card img {
+  background-color: var(--bright-accent);
+
+}
+
+section#about-the-team .container .card .team-content {
+  color: var(--mid-accent);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+section#about-the-team .container .card .team-content address {
+  text-align: left;
+  padding: none;
+  width: 100%;
+  align-items: start;
+  padding: 0px;
+}
+
+section#about-the-team .container .card .team-content address a {
+  display: inline;
+  color: var(--colourful-accent);
+  width: min-content;
+  height: min-content;
+  padding-right: 5px;
+}
+
+section#about-the-team .container .card .team-content address a:hover {
+
+  color: var(--bright-accent);
+
+}
+
+section#about-the-team .container .card .team-content address i {}
+
+section#gallery #gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 975px) {
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  header iframe {
+    margin-right: 20px;
+  }
+}
+
+span.highlight-light {
+  background-color: var(--main-back);
+}
+
+span.highlight-bright {
+  background-color: var(--bright-accent);
+  padding: 2px 6px;
+}
