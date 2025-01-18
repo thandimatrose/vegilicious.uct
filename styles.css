@@ -5,7 +5,8 @@
   --dark-accent: #002827;
   --colourful-accent: #7c1f76;
   --bright-accent: #caee66;
-  --mid-accent: #4b5e17;
+  --mid-accent: #a8c082;
+    --mid-dark-accent: #4b5e17;
   --body-width: 825px;
   --sans-font: "PingFang SC", sans-serif;
 }
@@ -56,12 +57,13 @@ body {
   background-image: url(images/background.jpg);
   background-size: cover;
   background-attachment: fixed;
-
   justify-content: end;
   margin: 0;
+  margin-top: 50px;
   padding-left: 25%;
 }
 
+body.home {}
 header {
   position: fixed;
   left: 10%;
@@ -83,9 +85,8 @@ header section {
 
 nav {
 
-
-  border-top: 1px var(--dark-colour) solid;
-  border-bottom: 1px var(--dark-colour) solid;
+  text-transform: lowercase;
+  
 
 }
 
@@ -95,17 +96,14 @@ nav ol {
 
 }
 
-nav ul li {
-  margin-right: 10px;
-}
 
-nav ul li a {
+nav ol li a {
   color: var(--dark-colour);
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: var(--main-back);
+nav ol li a:hover {
+  background-color: var(--bright-accent);
   text-decoration: none;
 }
 
@@ -137,6 +135,10 @@ h1 {
 
 h1 span.highlight-light {
   line-height: 100px;
+}
+h1 span {
+
+  z-index: 1;
 }
 
 h2 {
@@ -190,7 +192,27 @@ footer {
   font-weight: 900;
   font-style: normal;
 }
+img#logo {
 
+  width: 160px;
+}
+  
+    body.home img#logo {
+      position: absolute;
+      right: 100px;
+      top: 80px;
+      z-index: 7;
+    }
+  
+    section#home aside#upcoming-event {
+      border: var(--mid-accent) 1px solid;
+      padding: 40px;
+      width: 400px;
+    }
+  
+    section#home aside#upcoming-event h3 {
+      margin-top: 0;
+    }
 
 section#about-the-team .container {
   display: grid;
@@ -201,12 +223,12 @@ section#about-the-team .container {
 section#about-the-team .container .card {}
 
 section#about-the-team .container .card img {
-  background-color: var(--bright-accent);
+  background-color: var(--mid-accent);
 
 }
 
 section#about-the-team .container .card .team-content {
-  color: var(--mid-accent);
+  
   text-align: center;
   display: grid;
   grid-template-columns: 100%;
